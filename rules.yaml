@@ -1,0 +1,6 @@
+rules:
+  - name: Brute Force Detection
+    type: failed_login
+    threshold: 3 # failed login attempts
+    window: 60  # value is in seconds.
+    match_phrase: "Failed login"
