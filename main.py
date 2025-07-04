@@ -13,8 +13,7 @@ def main():
         parsed = parse_log(line)
         if parsed:
             alerts = apply_rules(parsed, rules)
-            if alerts:
-                send(alerts)
+        send(alerts)
 
 if __name__ == "__main__":
     main()
